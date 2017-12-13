@@ -1,0 +1,12 @@
+{% extends "layout.tmpl" %}
+{% block title %}{{title}}{% endblock %}
+{% block main %}
+{{main}}
+{% for result in results %}
+{{result}}<br />
+{% endfor %}
+<form id="" action="/work/add" method="POST">
+    <input name="name" type="text" />
+    <input name="content" type="text" />
+</form>
+{% endblock %}

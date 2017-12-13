@@ -1,0 +1,21 @@
+#editor {
+    height: 300px;
+}
+
+#quil-wrapper {
+    width: 600px;
+}
+
+.form-input {
+    margin-bottom: 5px;
+}
+
+body {
+    padding: 10px;
+}
+
+.form-buttons {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 100px;
+}

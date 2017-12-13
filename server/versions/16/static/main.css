@@ -1,0 +1,36 @@
+#editor {
+    height: auto;
+    min-height: 300px;
+}
+
+#editor .ql-editor {
+    overflow-y: visible; 
+}
+
+#quil-wrapper {
+    width: 860px;
+    height: 100%;
+    min-height: 100%;
+    overflow-y: auto;
+}
+
+.form-input {
+    margin-bottom: 5px;
+}
+
+body {
+    padding: 10px;
+}
+
+.form-buttons {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 100px;
+}
+
+/* Tell Quill not to scroll */
+#quill-container {
+    height: auto;
+    min-height: 100%;
+    padding: 50px;
+}

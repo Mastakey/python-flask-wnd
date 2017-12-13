@@ -1,0 +1,6 @@
+[
+	"version":"00001",
+	"sql":"db/work-notes-do.sql"
+	"db":"db/work-notes-do.db",
+	"main":"main.py"
+]

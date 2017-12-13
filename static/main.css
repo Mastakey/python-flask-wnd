@@ -1,0 +1,176 @@
+#input-name {
+    width: 350px;
+}
+
+#editor {
+    height: auto;
+    min-height: 300px;
+}
+
+#editor .ql-editor {
+    overflow-y: visible; 
+}
+
+#quil-wrapper {
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+	overflow-y: auto;
+	display: flex;
+	flex-flow: column;
+}
+
+#quil-header-wrapper {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+#button-wrapper {
+	display: flex;
+	flex-flow: row;
+}
+
+.form-input {
+    margin-bottom: 5px;
+}
+
+#create-date {
+	display: none;
+}
+
+#create-date, #last-date {
+	font-size: x-small;
+}
+
+.form-buttons {
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 100px;
+}
+
+/* Tell Quill not to scroll */
+#quill-container {
+    height: auto;
+    min-height: 100%;
+    padding: 50px;
+}
+
+/* Flex */
+* {
+	/* margin: 0; */
+	/* padding: 0; */
+	box-sizing: border-box;
+	/* border: 1px solid; */
+}
+
+.menu-container {
+	color: #fff;
+	background-color: #5995DA;
+	padding: 20px 0;
+	display: flex;
+	justify-content: center;
+}
+
+.menu {
+	width: 900px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.links {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.login {
+	margin-left: 20px;
+}
+
+.right-title {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.login {
+	margin-left: 20px;
+}
+
+.header-container {
+	color: #5995DA;
+	background-color: #D6E9FE;
+	display: flex;
+	justify-content: center;
+}
+
+.header {
+	width: 900px;
+	height: 300px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.body-container {
+	/* color: red; */
+	display: flex;
+	justify-content: center;
+}
+
+
+
+.body {
+	display: flex;
+	justify-content: flex-between;
+	flex-wrap: wrap;
+}
+
+.body-top {
+	width: 100%;
+	height: 20px;
+}
+
+.body-left {
+    flex: initial;
+    width: 100px;
+}
+
+.body-mid {
+	flex: 1;
+}
+
+.body-right {
+	flex: initial;
+}
+
+.social,
+.logo,
+.subscribe {
+  border: 1px solid #5995DA;
+}
+
+/* Lists */
+
+/* Lists */
+.body-left-menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.body-left-menu-item {
+	display: block;
+    width: 100px;
+}
+
+.body-left-menu-item:hover {
+    background-color: #555;
+    color: white;
+}
+
+h3 {
+	margin: 0;
+	padding-bottom: 10px;
+}
+

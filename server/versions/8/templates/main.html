@@ -1,0 +1,40 @@
+{% extends "layout.tmpl" %}
+{% block title %}{{title}}{% endblock %}
+{% block main %}
+<link href="/static/main.css" rel="stylesheet">
+<script src='/static/main.js'></script>
+{{main}}
+<ul>
+{% for result in results %}
+<li>
+{{result['name']}}
+</li>
+{% endfor %}
+</ul>
+<form id="" action="/work/add" method="POST">
+    <input id="input-name" name="name" type="text" placeholder="Enter Title" class="form-input"/>
+    <!-- Create the editor container -->
+    <div id="editor" class="quil_content">
+        <p>Enter Content
+    </div>
+    <input id="button-submit" type="button" value="Submit" />
+    <script>
+        document.getElementById('button-submit').addEventListener('click', function(){
+            var name = document.getElementById('input-name').value;
+            var content = quill.getContents();
+            args = {
+                'name':name,
+                'content':content
+            };
+            addEntry('work', args);
+        });
+    </script>
+    <!--<input type="submit" value="Submit" />-->
+</form>
+
+<script>
+var quill = new Quill('#editor', {
+    theme: 'snow'
+});
+</script>
+{% endblock %}

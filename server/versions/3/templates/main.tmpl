@@ -1,0 +1,8 @@
+{% extends "layout.tmpl" %}
+{% block title %}{{title}}{% endblock %}
+{% block main %}
+{{main}}
+{% for result in results %}
+{{result}}<br />
+{% endfor %}
+{% endblock %}
